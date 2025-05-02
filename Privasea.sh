@@ -7,6 +7,11 @@ RED='\033[0;31m'
 YELLOW='\033[1;33m'
 NC='\033[0m'
 
+# Лого
+echo -e '\e[0;32m'
+curl -s https://raw.githubusercontent.com/Crypto-Familly/crypto-familly-logo/refs/heads/main/logo.sh | bash
+echo -e '\e[0m'
+
 # Повідомлення
 success_message() {
     echo -e "${GREEN}[✔] $1${NC}"
@@ -71,9 +76,6 @@ view_logs() {
         sudo docker logs -f "$CONTAINER_ID"
     fi
 }
-
-# Відображаємо логотип
-curl -s https://raw.githubusercontent.com/Crypto-Familly/crypto-familly-logo/refs/heads/main/logo.sh | bash
 
 # Меню
 main_menu() {
