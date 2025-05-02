@@ -72,6 +72,9 @@ view_logs() {
     fi
 }
 
+# Відображаємо логотип
+curl -s https://raw.githubusercontent.com/Crypto-Familly/crypto-familly-logo/refs/heads/main/logo.sh | bash
+
 # Меню
 main_menu() {
     clear
