@@ -8,9 +8,8 @@ YELLOW='\033[1;33m'
 NC='\033[0m'
 
 # Лого
-echo -e '\e[0;32m'
 curl -s https://raw.githubusercontent.com/Crypto-Familly/crypto-familly-logo/refs/heads/main/logo.sh | bash
-echo -e '\e[0m'
+
 
 # Повідомлення
 success_message() {
